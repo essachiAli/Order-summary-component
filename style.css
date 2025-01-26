@@ -1,0 +1,115 @@
+* {
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 350px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.container :not(.hero){
+    margin: 18px 20px;
+}
+.hero {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.container ul {
+    background-color: hsl(225, 100%, 98%);
+    height: 80px;
+    border-radius: 8px;
+    position: relative;
+    
+}
+.container ul li img {
+    position: absolute;
+    left: -5px;
+
+}
+.container ul li h2{
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    position: absolute;
+    top: 10px; 
+    left: 60px;
+
+}
+.container ul li span {
+    color: hsl(224, 23%, 55%);
+    font-size: 0.8rem;
+    font-weight: 700; 
+    position: absolute;
+    top: 2px;
+    left: -20px;
+}
+.container ul li a {
+    font-weight: 700;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.container ul li a:hover {
+    color: hsl(224, 23%, 55%);
+}
+.container button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 87%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    box-shadow: 2px 8px 20px hsl(245, 63%, 79%);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.container button:hover {
+    opacity: 0.7;
+}
+.cancel {
+    font-weight: 800;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
